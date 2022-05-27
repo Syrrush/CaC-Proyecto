@@ -1,0 +1,252 @@
+
+html{
+background-image: url("../images/diggi.png");
+background-repeat: repeat;
+background-size: 100vw;
+position:relative;
+width: 100%;
+height: fit-content;
+}
+small{
+    color:red
+}
+#header {
+    padding: 5em 5em 1em 5em ;
+    text-align: center;
+}
+
+    #header h1 {
+        margin: 0 0 0.25em 0;
+    }
+
+    #header p {
+        font-size: 1.25em;
+        letter-spacing: -0.025em;
+    }
+.seccion{
+    display: flex;
+    text-align: center;
+}
+#list{
+    display: grid;
+    position:relative;
+    grid-template-columns: repeat(7,1fr);
+    width: 98%;
+    height:75%;
+    grid-gap: 10px;
+    padding:0px 5px;
+    height: fit-content;
+    justify-content:space-between;
+    cursor: default;
+}
+.info{
+    cursor:default
+}
+.tarjeta{
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    align-items:center; 
+    border: 3px solid #b42b19;
+    width: 100%;
+    height: 100%;
+    float: left;
+    font-size: 15px;
+    overflow: hidden;
+    border-radius: 10px;    
+}
+.imagen{
+    height: 50%;
+    width:80%;
+    border-radius: 10%;
+    border: 2px solid rgb(133, 18, 10);
+    object-fit: cover;
+}
+.cuerpo{
+    padding: 10px;
+    width: 50%
+
+}
+.Cartas .list .item:last-of-type {
+	border-bottom: none;
+}
+.Cartas .list .item:hover {
+	background: rgba(0, 0, 0, 0.05);
+}
+
+.pagenumbers button {
+	width: 50px;
+	height: 50px;
+
+	appearance: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	background-color: #44AAEE;
+
+	margin: 5px;
+	transition: 0.4s;
+
+	color: #FFF;
+	font-size: 18px;
+	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pagenumbers button:hover {
+	background-color: #44EEAA;
+}
+
+.pagenumbers button.activa {
+	background-color: #44EEAA;
+	box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+.header{
+    grid-area: "header";
+    padding: 5em 5em 1em 5em ;
+    text-align: center;
+}
+.barraNavegacion{
+    grid-area: "barraNavegacion";
+}
+.main{
+    grid-area: "main";
+}
+
+.grid-container{
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    "header"
+    "barraNavegacion"
+    "main";
+}
+
+@media(min-width: 900px){
+    #list{
+        display: grid;
+        position:relative;
+        grid-template-columns: repeat(7,1fr);
+        width: 98%;
+        height:75%;
+        grid-gap: 10px;
+        padding:0px 5px;
+        height: fit-content;
+        justify-content:space-between;
+        cursor: default;
+    }
+    .info{
+        cursor:default
+    }
+    .tarjeta{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        align-items:center; 
+        border: 3px solid #b42b19;
+        width: 100%;
+        height: 100%;
+        float: left;
+        font-size: 15px;
+        overflow: hidden;
+        border-radius: 10px;    
+    }
+    .imagen{
+        height: 50%;
+        width:80%;
+        border-radius: 10%;
+        border: 2px solid rgb(133, 18, 10);
+        object-fit: cover;
+    }
+    .cuerpo{
+        padding: 10px;
+        width: 50%
+    
+    }
+}
+
+@media(max-width: 900px){
+    #list{
+        display: grid;
+        position:relative;
+        grid-template-columns: repeat(10,1fr);
+        width: 98%;
+        height:75%;
+        grid-gap: 10px;
+        padding:0px 5px;
+        height: fit-content;
+        justify-content:space-between;
+        cursor: default;
+    }
+    .info{
+        cursor:default
+    }
+    .tarjeta{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        align-items:center; 
+        border: 3px solid #b42b19;
+        width: 100%;
+        height: 100%;
+        float: left;
+        font-size: 15px;
+        overflow: hidden;
+        border-radius: 10px;    
+    }
+    .imagen{
+        height: 50%;
+        width:80%;
+        border-radius: 10%;
+        border: 2px solid rgb(133, 18, 10);
+        object-fit: cover;
+    }
+    .cuerpo{
+        padding: 10px;
+        width: 50%
+    
+    }
+}
+@media(max-width: 600px){
+    #list{
+        display: grid;
+        position:relative;
+        grid-template-columns: repeat(14,1fr);
+        width: 98%;
+        height:75%;
+        grid-gap: 10px;
+        padding:0px 5px;
+        height: fit-content;
+        justify-content:space-between;
+        cursor: default;
+    }
+    .info{
+        cursor:default
+    }
+    .tarjeta{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        align-items:center; 
+        border: 3px solid #b42b19;
+        width: 100%;
+        height: 100%;
+        float: left;
+        font-size: 15px;
+        overflow: hidden;
+        border-radius: 10px;    
+    }
+    .imagen{
+        height: 50%;
+        width:80%;
+        border-radius: 10%;
+        border: 2px solid rgb(133, 18, 10);
+        object-fit: cover;
+    }
+    .cuerpo{
+        padding: 10px;
+        width: 50%
+    
+    }
+}

@@ -1,0 +1,34 @@
+.barraNavegacion {
+    background: transparent;
+    display: grid;
+    border: 3px solid black;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    
+    grid-gap: 10px;
+    padding:0px 5px;
+    height: fit-content;
+    text-align: center;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.navBar {
+    display: grid;
+    text-decoration: none;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 2.5vw;
+    margin: 0 1vw;
+}
+.navBar:hover {
+    background: #161616;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navBar:active {
+    background: #ffffff;
+    color: #000000;
+}

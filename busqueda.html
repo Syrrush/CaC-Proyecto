@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/navBar.css" />
+        <link rel="stylesheet" href="./assets/busqueda.css" />
+        <script src="./js/searchBar.js" defer></script>
+
+
+    <title>Busqueda</title>
+</head>
+<body>
+    <nav id="idnavbar" class="barraNavegacion"></nav>
+    <div class="search-contenedor">
+        <label for="search">Busque el digimon que quiera o el nivel!</label>
+        <input type="search" id="search" data-search >
+    </div>
+<div class="digi-cards" id="data-digi-card-container" data-digi-card-container></div>
+<template id="data-digi-template" data-digi-template>
+    <div class="card" id="card" >
+        <div class="header" id="data-header" data-header></div>
+        <div class="body" id="data-body" data-body></div>
+        <div class="footer" id="data-footer" data-footer></div>
+    </div>
+</template>
+    <script src="./js/navbar.js"></script>
+</body>
+</html>

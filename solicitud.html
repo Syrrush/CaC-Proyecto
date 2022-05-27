@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/solicitud.css" />
+    <link rel="stylesheet" href="./assets/navBar.css" />
+
+    <title>Formulario</title>
+</head>
+<body>
+    <header id="idheader"></header>
+    <main>
+        <nav id="idnavbar" class="barraNavegacion"></nav>
+        <h1 class="tituloform">Nuevo Digimon:</h1>
+        <div class="form-container">
+            <form class="form" id="form" action="https://formsubmit.co/zanattasebas@gmail.com" method="POST">
+                <h2 class="tituloform">Llenar formulario para crear un nuevo Digimon:</h2>
+                <div class="form-control">
+                <label class="form-text" for="nombre">Nombre: </label>
+                <input onkeyup="checkInputs()" id="nombre" type="text" class="form-control"
+                    placeholder="Nombre del Digimon" required>
+                    <i class="fas fa-check-circle" ></i>
+                    <i class="fas fa-exclamation-circle" ></i>
+                    <small>Nice</small>
+                </div>
+
+                <div class="form-control" >
+                <label class="form-text" for="image">imagen: </label>
+                <input onkeyup="checkInputs()" id="image" type="text" class="form-control"
+                    placeholder="Link de imagen del Digi" required>
+                    <i class="fas fa-check-circle" ></i>
+                    <i class="fas fa-exclamation-circle" ></i>
+                    <small>Nice</small>
+
+                </div>
+
+                <div class="form-control">
+                <label class="form-text" for=""><label>Nivel:</label> </label>
+                <input  onkeyup="checkInputs()" id="nivel" type="text" class="form-control"
+                    placeholder="Nivel del Digimon" required>
+                    <i class="fas fa-check-circle" ></i>
+                    <i class="fas fa-exclamation-circle" ></i>
+                    <small>Nice</small>
+                </div>
+                
+                <div class="form-control">
+                    <label class="form-text" for="">Correo de contacto: </label>
+                    <input onkeyup="checkInputs()" id="email" type="email"  class="form-control"
+                    placeholder="Correo eléctronico" required>
+                    <i class="fas fa-check-circle" ></i>
+                    <i class="fas fa-exclamation-circle" ></i>
+                    <small>Nice</small>
+
+                </div>
+
+                <br>
+                <button id="env" class="form-button" disabled>Enviar</button>
+                <button id="res" class="form-button" type="reset" value="Reset">Reiniciar</button>
+            </form>
+            <p class="warning" id="warning"></p>
+        </div>
+        <div>
+            <br>
+            <h3 id="enviar-correo">Por cualquier consuilta, enviar un mail aquí </h3>
+            <a href="mailto:zanattasebas@gmail.com">ENVIAR
+                MAIL</a>
+            <br>
+            <br>
+            <br>
+        </div>
+        </div>
+    </main>
+
+    <footer id="idfooter"></footer>
+    <script src="./js/validar.js"></script>
+    <script src="./js/navbar.js"></script>
+</body>
+</html>
+<!-- https://formsubmit.co/zanattasebas@gmail.com -->
