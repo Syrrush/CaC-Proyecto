@@ -170,7 +170,7 @@ small{
     #list{
         display: grid;
         position:relative;
-        grid-template-columns: repeat(10,1fr);
+        grid-template-columns: repeat(5,1fr);
         width: 98%;
         height:75%;
         grid-gap: 10px;
@@ -212,7 +212,7 @@ small{
     #list{
         display: grid;
         position:relative;
-        grid-template-columns: repeat(14,1fr);
+        grid-template-columns: repeat(3,1fr);
         width: 98%;
         height:75%;
         grid-gap: 10px;
